@@ -1,0 +1,37 @@
+/* magnific library opened */
+.mfp-zoom-out-cur .gallery {
+
+}
+
+.mfp-figure{
+	background: #181818;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+	left : 100%;
+	transition : all 1s;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	left : 0;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	left : 100%;
+}

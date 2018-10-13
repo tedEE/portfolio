@@ -1,0 +1,115 @@
+.left_side
+	background-color: #111
+	position fixed
+	left 0
+	top 0
+	width 50px
+	height 100%
+	z-index 10
+	color: #fff
+	transition anim
+	overflow-x hidden
+	outline none
+	
+.left_side.active
+		width 300px
+		.user_info
+			opacity 1
+		.btn_mnu
+			background-color: transparent
+			transition anim
+.left_side.active .menu__item a::before
+	margin-left -32px
+.left_side.active .aside__content .menu__item:hover a
+	text-indent 5px
+.left_side.active nav
+	margin-top: 0
+.left_side nav
+	margin-top -110px
+	transition anim
+	position relative
+	z-index 5
+.btn_mnu
+	float right
+.aside__content  
+	position absolute
+	top 50px
+	width 100%
+	padding 75px 0
+
+	
+.user_info
+	text-align center
+	opacity 0
+	transition all .3s
+	// transition-delay .5s
+	white-space nowrap
+	img
+		width 120px
+		height 120px
+		border-radius 50%
+		// margin-bottom 10px
+	h2
+		font-size 18px
+		margin 13px 0 13px 0
+	p
+		color dark-text
+		font-size 16px
+		letter-spacing 1px
+		font-weight bold
+nav
+	padding 35px 0
+.menu
+
+	&__item
+			a
+				display block
+				color #fff
+				text-decoration none
+				padding-left 70px
+				padding 10px 0 10px 70px
+				border-bottom #212121 1px solid
+				white-space nowrap
+				color #b2b2b2
+				&:first-child
+					border-top #212121 1px solid
+				&:hover
+					background-color: tom
+					color #fff
+					// transition anim
+				&::before
+					transition anim
+			&:nth-child(1) a::before
+				font-family: "linea-basic-10" 
+				display inline-block
+				line-height: 0
+				vertical-align middle
+				content "u"	
+				font-size 25px
+				margin-left -60px
+				margin-right 16px
+				margin-top -4px
+				
+			&:nth-child(2) a::before
+				font-family: "linea-basic-10" 
+				display inline-block
+				line-height: 0
+				vertical-align middle
+				content "{"	
+				font-size 25px
+				margin-left -60px
+				margin-right 16px
+				margin-top -4px
+			&:nth-child(3) a::before
+				font-family: "linea-basic-10" 
+				display inline-block
+				line-height: 0
+				vertical-align middle
+				content "R"	
+				font-size 25px
+				margin-left -60px
+				margin-right 16px
+				margin-top -4px
+
+
+	

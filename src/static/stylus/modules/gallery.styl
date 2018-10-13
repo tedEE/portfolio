@@ -1,0 +1,75 @@
+@import "modules/magnific.css"
+.content
+	position relative
+	margin 5px 5px 55px 57px
+	left: 0
+.gallery a
+	overflow hidden
+	width 320px
+	min-height: 50px
+	display block
+.gallery img
+	display block
+	max-width 100%
+	transition all 5s
+	&:hover
+		transform scale(3)
+.left_side.active + .content
+	left 250px
+	transition anim
+	transition-delay .5s
+.filter_items
+	position fixed
+	bottom 0
+	color #fff
+	right 0
+	text-align right
+	width 100%
+	padding 10px 10px 0
+	background-color: #181818
+.filter_label
+	background-color transparent
+	border-color #fff
+	transition anim
+	padding 5px 15px
+	opacity: .4
+	margin 0 3px 15px
+	font-size 12px
+	letter-spacing 3px
+	border 1px #fff solid 
+	color #fff
+	&:hover
+		background-color: tom
+		opacity 1
+		border-color tom
+	&.active
+		background-color: tom
+		opacity 1
+		border-color tom
+.mfp-content
+	width 100%
+.mfp-container
+	padding 0
+img.mfp-img
+	max-width 100%
+	height auto
+	display block
+	padding 0
+	max-height none !important
+.mfp-figure button.mfp-close
+	background: tom
+	height 50px
+	padding 0
+	position fixed
+	right 8px
+	text-align center
+	width 50px
+	cursor pointer !important
+	margin-right 10px
+.mfp-zoom-out-cur .gallery
+	left -100%
+	transition all 1s
+
+
+
+	
